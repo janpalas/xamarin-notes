@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.suo
+/NoteTaker/NoteTaker.Droid/bin/Debug
+/NoteTaker/NoteTaker.Droid/obj
+/NoteTaker/NoteTaker.Droid/bin/Debug
+*.user

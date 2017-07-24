@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Hello World, Click Me!</string>
+    <string name="ApplicationName">NoteTaker.Droid</string>
+    <string name="Title">Název:</string>
+  <string name="Note">Poznámka:</string>
+  <string name="Save">Uložit</string>
+  <string name="Cancel">Storno</string>
+  <string name="TitleHint">Název...</string>
+  <string name="NoteHint">Poznámka...</string>
+</resources>
