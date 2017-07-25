@@ -45,7 +45,10 @@ namespace NoteTaker.Droid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int ic_menu_paste_holo_dark = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int Icon = 2130837505;
 			
 			static Drawable()
 			{
@@ -59,6 +62,9 @@ namespace NoteTaker.Droid
 		
 		public partial class Id
 		{
+			
+			// aapt resource value: 0x7f060008
+			public const int AddMenuItem = 2131099656;
 			
 			// aapt resource value: 0x7f060007
 			public const int CancelMenuItem = 2131099655;
@@ -119,6 +125,9 @@ namespace NoteTaker.Droid
 			// aapt resource value: 0x7f050000
 			public const int EditNoteMenu = 2131034112;
 			
+			// aapt resource value: 0x7f050001
+			public const int NotesListMenu = 2131034113;
+			
 			static Menu()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -143,6 +152,9 @@ namespace NoteTaker.Droid
 			
 			// aapt resource value: 0x7f040000
 			public const int Hello = 2130968576;
+			
+			// aapt resource value: 0x7f040009
+			public const int MyNotesActionBarTitle = 2130968585;
 			
 			// aapt resource value: 0x7f040003
 			public const int Note = 2130968579;

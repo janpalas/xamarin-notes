@@ -9,4 +9,5 @@
   <string name="TitleHint">Title...</string>
   <string name="NoteHint">Content...</string>
   <string name="EditNoteActionBarTitle">Edit note</string>
+  <string name="MyNotesActionBarTitle">Notes</string>
 </resources>
