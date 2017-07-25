@@ -29,7 +29,7 @@ namespace NoteTaker.Shared.ViewModels.Page
 
         public void SaveChanges()
         {
-            if (Note.NoteGUID.HasValue)
+            if (!Note.NoteGUID.HasValue)
             {
                 _notesManager.InsertNote(Note);
             }

@@ -21,8 +21,13 @@ namespace NoteTaker.Droid.Activities
             ActivateActionBar();
 
             _viewModel = new NotesListPageViewModel(new TestNotesManager());
-            _viewModel.LoadNotes();
+        }
 
+        protected override void OnStart()
+        {
+            base.OnStart();
+
+            _viewModel.LoadNotes();
             ListAdapter = new NotesAdapter(this, _viewModel.Notes);
         }
 

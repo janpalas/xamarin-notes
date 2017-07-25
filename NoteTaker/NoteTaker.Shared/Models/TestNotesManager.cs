@@ -33,6 +33,9 @@ namespace NoteTaker.Shared.Models
 
         public void InsertNote(Note note)
         {
+            note.NoteGUID = Guid.NewGuid();
+            note.Created = DateTime.Now;
+            
             _notes.Add(note);
         }
 

@@ -35,10 +35,24 @@ namespace NoteTaker.Droid.Activities
             }
         }
 
-        private void DisplayDataInView()
+        public override bool OnCreateOptionsMenu(IMenu menu)
         {
-            FindViewById<TextView>(Resource.Id.txtTitle).Text = _viewModel.Note.Title;
-            FindViewById<TextView>(Resource.Id.txtNote).Text = _viewModel.Note.NoteText;
+            MenuInflater.Inflate(Resource.Menu.EditNoteMenu, menu);
+            return true;
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == Resource.Id.SaveMenuItem)
+            {
+                ExtractDataFromView();
+                _viewModel.SaveChanges();
+            }
+            
+            //Finish je neco jako back
+            Finish();
+
+            return base.OnOptionsItemSelected(item);
         }
 
         private void ActivateActionBar()
@@ -53,10 +67,16 @@ namespace NoteTaker.Droid.Activities
             ActionBar.SetDisplayHomeAsUpEnabled(true);
         }
 
-        public override bool OnCreateOptionsMenu(IMenu menu)
+        private void DisplayDataInView()
         {
-            MenuInflater.Inflate(Resource.Menu.EditNoteMenu, menu);
-            return true;
+            FindViewById<TextView>(Resource.Id.txtTitle).Text = _viewModel.Note.Title;
+            FindViewById<TextView>(Resource.Id.txtNote).Text = _viewModel.Note.NoteText;
+        }
+
+        private void ExtractDataFromView()
+        {
+            _viewModel.Note.Title = FindViewById<TextView>(Resource.Id.txtTitle).Text;
+            _viewModel.Note.NoteText = FindViewById<TextView>(Resource.Id.txtNote).Text;
         }
     }
 }
