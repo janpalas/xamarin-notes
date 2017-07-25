@@ -36,7 +36,24 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BranchDetail.cs" />
+    <Compile Include="BranchInfo.cs" />
+    <Compile Include="CountryInfo.cs" />
+    <Compile Include="EventDetail.cs" />
+    <Compile Include="EventInfo.cs" />
+    <Compile Include="EventPlaceDetail.cs" />
+    <Compile Include="EventPlaceInfo.cs" />
+    <Compile Include="EventRegisteredUserStatisticInfo.cs" />
+    <Compile Include="EventRegistrationDetail.cs" />
+    <Compile Include="MultimediaContentItemDetail.cs" />
+    <Compile Include="MultimediaContentItemInfo.cs" />
+    <Compile Include="MultimediaStreamDetail.cs" />
+    <Compile Include="PhotoInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpeakerDetail.cs" />
+    <Compile Include="SpeakerInfo.cs" />
+    <Compile Include="ThumbnailDetail.cs" />
+    <Compile Include="UserInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
