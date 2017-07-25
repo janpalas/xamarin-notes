@@ -7,3 +7,5 @@
 /NoteTaker/NoteTaker.Droid/obj
 /NoteTaker/NoteTaker.Droid/bin/Debug
 *.user
+/NoteTaker/NoteTaker.Shared/obj/Debug
+/NoteTaker/NoteTaker.Shared/bin/Debug

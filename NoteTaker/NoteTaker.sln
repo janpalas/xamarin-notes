@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteTaker.Droid", "NoteTaker.Droid\NoteTaker.Droid.csproj", "{78A68995-EC52-4EF6-8804-E995E7659EE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteTaker.Shared", "NoteTaker.Shared\NoteTaker.Shared.csproj", "{C2F821CC-6A8F-406B-B893-9FA6FB42E0DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{78A68995-EC52-4EF6-8804-E995E7659EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78A68995-EC52-4EF6-8804-E995E7659EE9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{78A68995-EC52-4EF6-8804-E995E7659EE9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C2F821CC-6A8F-406B-B893-9FA6FB42E0DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F821CC-6A8F-406B-B893-9FA6FB42E0DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F821CC-6A8F-406B-B893-9FA6FB42E0DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F821CC-6A8F-406B-B893-9FA6FB42E0DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

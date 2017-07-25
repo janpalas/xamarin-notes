@@ -14,7 +14,7 @@ namespace NoteTaker.Droid.Activities
             ActivateActionBar();
 
             // Create your application here
-            SetContentView (Resource.Layout.EditNote);
+            SetContentView(Resource.Layout.EditNote);
         }
 
         private void ActivateActionBar()

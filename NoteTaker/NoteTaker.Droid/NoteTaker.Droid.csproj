@@ -93,6 +93,12 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_menu_paste_holo_dark.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NoteTaker.Shared\NoteTaker.Shared.csproj">
+      <Project>{c2f821cc-6a8f-406b-b893-9fa6fb42e0dd}</Project>
+      <Name>NoteTaker.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.
