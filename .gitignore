@@ -9,3 +9,9 @@
 *.user
 /NoteTaker/NoteTaker.Shared/obj/Debug
 /NoteTaker/NoteTaker.Shared/bin/Debug
+/NoteTaker/WUG.Client.Droid/bin/Debug
+/NoteTaker/WUG.Client.Droid/obj/Debug
+/NoteTaker/WUG.Client.Shared/bin/Debug
+/NoteTaker/WUG.Client.Shared/obj/Debug
+/NoteTaker/WUG.Core.Services.DataEntities/bin/Debug
+/NoteTaker/WUG.Core.Services.DataEntities/obj/Debug
