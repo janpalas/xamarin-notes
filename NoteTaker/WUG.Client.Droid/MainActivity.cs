@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.OS;
 using WUG.Client.Droid.Adapters;
+using WUG.Client.Droid.PlatformSpecific;
 using WUG.Client.Shared.Models;
 using WUG.Client.Shared.ViewModels.Page;
 
@@ -15,7 +16,7 @@ namespace WUG.Client.Droid
         {
             base.OnCreate(bundle);
 
-            _viewModel = new MainPageViewModel(new TestEventProvider());
+            _viewModel = new MainPageViewModel(new EventProvider(new DroidHttpClient()));
             // Set our view from the "main" layout resource
             // SetContentView (Resource.Layout.Main);
         }
