@@ -41,6 +41,7 @@
     <Compile Include="Models\Note.cs" />
     <Compile Include="Models\TestNotesManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\Page\EditNotePageViewModel.cs" />
     <Compile Include="ViewModels\Page\NotesListPageViewModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

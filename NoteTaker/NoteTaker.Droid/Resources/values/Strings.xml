@@ -8,6 +8,7 @@
   <string name="Cancel">Cancel</string>
   <string name="TitleHint">Title...</string>
   <string name="NoteHint">Content...</string>
-  <string name="EditNoteActionBarTitle">Edit note</string>
+  <string name="NewNoteActionBarTitle">New note</string>
+  <string name="EditNoteActionBarTitle">Notes</string>
   <string name="MyNotesActionBarTitle">Notes</string>
 </resources>

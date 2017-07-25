@@ -1,6 +1,8 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Views;
+using Android.Widget;
 using NoteTaker.Droid.Adapters;
 using NoteTaker.Shared.Models;
 using NoteTaker.Shared.ViewModels.Page;
@@ -47,6 +49,16 @@ namespace NoteTaker.Droid.Activities
             }
 
             return base.OnOptionsItemSelected(item);
+        }
+
+        protected override void OnListItemClick(ListView l, View v, int position, long id)
+        {
+            Note note = _viewModel.Notes[position];
+
+            var noteDetail = new Intent(this, typeof(EditNoteActivity));
+            noteDetail.PutExtra("NoteGUID", note.NoteGUID.ToString());
+
+            StartActivity(noteDetail);
         }
     }
 }
