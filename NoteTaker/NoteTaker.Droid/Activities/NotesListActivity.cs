@@ -1,18 +1,27 @@
 ﻿using Android.App;
 using Android.OS;
 using Android.Views;
+using NoteTaker.Droid.Adapters;
+using NoteTaker.Shared.Models;
+using NoteTaker.Shared.ViewModels.Page;
 
 namespace NoteTaker.Droid.Activities
 {
     [Activity(Label = "NotesListActivity", MainLauncher = true, Icon = "@drawable/icon")]
-    public class NotesListActivity : Activity
+    public class NotesListActivity : ListActivity
     {
+        private NotesListPageViewModel _viewModel;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            // Create your application here
             ActivateActionBar();
+
+            _viewModel = new NotesListPageViewModel(new TestNotesManager());
+            _viewModel.LoadNotes();
+
+            ListAdapter = new NotesAdapter(this, _viewModel.Notes);
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

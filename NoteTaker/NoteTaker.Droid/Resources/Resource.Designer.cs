@@ -63,14 +63,14 @@ namespace NoteTaker.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060008
-			public const int AddMenuItem = 2131099656;
+			// aapt resource value: 0x7f06000b
+			public const int AddMenuItem = 2131099659;
 			
-			// aapt resource value: 0x7f060007
-			public const int CancelMenuItem = 2131099655;
+			// aapt resource value: 0x7f06000a
+			public const int CancelMenuItem = 2131099658;
 			
-			// aapt resource value: 0x7f060006
-			public const int SaveMenuItem = 2131099654;
+			// aapt resource value: 0x7f060009
+			public const int SaveMenuItem = 2131099657;
 			
 			// aapt resource value: 0x7f060005
 			public const int btnCancel = 2131099653;
@@ -83,6 +83,15 @@ namespace NoteTaker.Droid
 			
 			// aapt resource value: 0x7f060003
 			public const int linearLayout1 = 2131099651;
+			
+			// aapt resource value: 0x7f060006
+			public const int noteIconImage = 2131099654;
+			
+			// aapt resource value: 0x7f060008
+			public const int textViewCreated = 2131099656;
+			
+			// aapt resource value: 0x7f060007
+			public const int textViewTitle = 2131099655;
 			
 			// aapt resource value: 0x7f060002
 			public const int txtNote = 2131099650;
@@ -108,6 +117,9 @@ namespace NoteTaker.Droid
 			
 			// aapt resource value: 0x7f030001
 			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int NoteListViewItem = 2130903042;
 			
 			static Layout()
 			{
