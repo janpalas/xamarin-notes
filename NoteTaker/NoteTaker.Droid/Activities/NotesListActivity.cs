@@ -29,5 +29,15 @@ namespace NoteTaker.Droid.Activities
             ActionBar.SetTitle(Resource.String.MyNotesActionBarTitle);
             ActionBar.SetDisplayShowTitleEnabled(true);
         }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == Resource.Id.AddMenuItem)
+            {
+                StartActivity(typeof(EditNoteActivity));    
+            }
+
+            return base.OnOptionsItemSelected(item);
+        }
     }
 }

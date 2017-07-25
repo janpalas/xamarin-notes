@@ -4,7 +4,7 @@ using Android.Views;
 
 namespace NoteTaker.Droid.Activities
 {
-    [Activity(Label = "EditNoteActivity")]
+    [Activity(Label = "EditNoteActivity", ParentActivity = typeof(NotesListActivity))]
     public class EditNoteActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -24,6 +24,8 @@ namespace NoteTaker.Droid.Activities
             ActionBar.NavigationMode = ActionBarNavigationMode.Standard;
             ActionBar.SetTitle(Resource.String.EditNoteActionBarTitle);
             ActionBar.SetDisplayShowTitleEnabled(true);
+
+            //Enabluje moznost prechodu "UP" z hlavicky v menu - proto je nutne v atributu tridy uvest ParentActivity
             ActionBar.SetDisplayHomeAsUpEnabled(true);
         }
 
