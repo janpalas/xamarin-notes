@@ -41,7 +41,7 @@ namespace NoteTaker.Droid.Adapters
             return position;
         }
 
-        public override int Count => _notes.Count;
+        public override int Count => _notes?.Count ?? 0;
 
         public override Note this[int position] => _notes[position];
     }
