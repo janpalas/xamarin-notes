@@ -11,20 +11,27 @@
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
-                                <!--<Grid>
-                                    
-                                </Grid>-->
-                                <StackLayout Padding="0, 10, 0, 0"
-                                             Orientation="Horizontal"
-                                             Spacing="10">
-                                    <Frame>
-                                        <Label Text="{Binding TakePlaceFromDay}" Font="Bold, Large"/>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="65"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Frame Grid.Column="0">
+                                        <Label Text="{Binding TakePlaceFromDay}" Font="Bold, Large" HorizontalTextAlignment="Center"/>
                                     </Frame>
-                                    <StackLayout Padding="0">
+                                    <StackLayout Padding="0" Grid.Column="1">
                                         <Label Text="{Binding Name}" Font="Bold, Medium"/>
                                         <Label Text="{Binding BranchName}" />
+                                        <ActivityIndicator IsRunning="False"></ActivityIndicator>
                                     </StackLayout>
-                                </StackLayout>
+                                    
+                                </Grid>
+                                <!--<StackLayout Padding="0, 10, 0, 0"
+                                             Orientation="Horizontal"
+                                             Spacing="10">-->
+                                   
+                                <!--</StackLayout>-->
                             </ViewCell.View>
                         </ViewCell>
                     </DataTemplate>
