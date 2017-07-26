@@ -27,6 +27,8 @@ namespace WUG.Client.Forms
 
         private async void ListView_OnItemTapped(object sender, ItemTappedEventArgs e)
         {
+            await DisplayAlert("Ahoj", "bla bla bla", "Storno");
+
             var eventInfo = e.Item as EventInfoViewModel;
             if (eventInfo != null)
             {

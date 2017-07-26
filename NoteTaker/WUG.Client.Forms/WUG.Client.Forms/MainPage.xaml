@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              x:Class="WUG.Client.Forms.MainPage"
              Title="WUG Česká republika">
     <TabbedPage.Children>
@@ -49,13 +50,14 @@
                    HorizontalOptions="Center" />
         </ContentPage>
 
-        <ContentPage Title="Current Events">
+        <ContentPage Title="Map">
             <!--<ListView ItemsSource="{Binding UpcomingEvents}">
                 
             </ListView>-->
-            <Label Text="Ahoj!" 
-                   VerticalOptions="Center" 
-                   HorizontalOptions="Center" />
+            <maps:Map WidthRequest="320" HeightRequest="200"
+                      x:Name="MyMap"
+                      
+                      MapType="Hybrid"></maps:Map>
         </ContentPage>
     </TabbedPage.Children>
 	
