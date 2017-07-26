@@ -1,5 +1,6 @@
 ﻿using WUG.Client.Shared.Models;
 using WUG.Client.Shared.PlatformAbstractions;
+using WUG.Client.Shared.ViewModels.Entity;
 using WUG.Client.Shared.ViewModels.Page;
 using Xamarin.Forms;
 
@@ -22,6 +23,15 @@ namespace WUG.Client.Forms
             base.OnAppearing();
 
             await _viewModel.LoadDataAsync();
+        }
+
+        private async void ListView_OnItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var eventInfo = e.Item as EventInfoViewModel;
+            if (eventInfo != null)
+            {
+                await Navigation.PushAsync(new EventDetailPage(eventInfo));
+            }
         }
     }
 }

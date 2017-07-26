@@ -13,7 +13,7 @@ namespace WUG.Client.Forms
         {
             InitializeComponent();
 
-            MainPage = new WUG.Client.Forms.MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

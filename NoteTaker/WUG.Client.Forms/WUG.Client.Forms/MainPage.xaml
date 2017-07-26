@@ -6,7 +6,7 @@
     <TabbedPage.Children>
         <ContentPage Title="Upcoming Events">
             <!--<ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" IsHorizontalOptions="Center" VerticalOptions="Center" />-->
-            <ListView ItemsSource="{Binding UpcomingEvents}" HasUnevenRows="True">
+            <ListView ItemsSource="{Binding UpcomingEvents}" HasUnevenRows="True" ItemTapped="ListView_OnItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
