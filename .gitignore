@@ -17,3 +17,6 @@
 /NoteTaker/WUG.Core.Services.DataEntities/obj/Debug
 /NoteTaker/packages/Newtonsoft.Json.10.0.3
 /NoteTaker/packages/System.Net.Http.4.3.2
+/NoteTaker/packages
+/NoteTaker/WUG.Client.Shared.Tests/obj/Debug
+/NoteTaker/WUG.Client.Shared.Tests/bin/Debug
