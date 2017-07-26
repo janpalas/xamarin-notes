@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GetUpcomingEvents" xml:space="preserve">
+    <value>[{"EventID":952,"Name":".Net TechTalks","TakePlaceFrom":"2017-08-01T17:00:00","TakePlaceTo":"2017-08-01T20:30:00","EventType":0,"Branch":{"BranchID":2,"Name":"Brno","IsActive":true,"Country":{"CountryID":1,"Name":"Česká republika","CountryCode":"cz","CultureCode":"cs-CZ"}},"EventPlace":{"EventPlaceID":44,"BranchID":2,"Name":"Fakulta informatiky Masarykovy univerzity"},"Speakers":[{"SpeakerID":233,"FirstName":"Jan","LastName":"Vorlicek","Company":"Microsoft","Title":null,"Suffix":null,"DisplayedTitles":null,"Photos":[{"PhotoID":2031,"DownloadThumbnailUrlPattern":"https://www.wug.cz/GetFile.ashx?ThumbnailID={0}","DisplayOrder":0,"Thumbnails":[{"TID":11124,"TSN":"detail","W":400,"H":400,"FS":38629,"FT":".jpg"},{"TID":11125,"TSN":"small-admin","W":136,"H":136,"FS":7622,"FT":".jpg"},{"TID":11126,"TSN":"medium","W":257,"H":257,"FS":22480,"FT":".jpg"},{"TID":11127,"TSN":"small","W":75,"H":75,"FS":3251,"FT":".jpg"}]}]},{"SpeakerID":227,"FirstName":"Karel","LastName":"Zikmund","Company":"Microsoft","Title":null,"Suffix":null,"DisplayedTitles":null,"Photos":[{"PhotoID":2026,"DownloadThumbnailUrlPattern":"https://www.wug.cz/GetFile.ashx?ThumbnailID={0}","DisplayOrder":0,"Thumbnails":[{"TID":11104,"TSN":"detail","W":267,"H":243,"FS":17761,"FT":".jpg"},{"TID":11105,"TSN":"small-admin","W":136,"H":123,"FS":5798,"FT":".jpg"},{"TID":11106,"TSN":"medium","W":257,"H":233,"FS":14940,"FT":".jpg"},{"TID":11107,"TSN":"small","W":75,"H":68,"FS":2770,"FT":".jpg"}]}]},{"SpeakerID":229,"FirstName":"Marek","LastName":"Safar","Company":"Microsoft","Title":null,"Suffix":null,"DisplayedTitles":null,"Photos":[{"PhotoID":2058,"DownloadThumbnailUrlPattern":"https://www.wug.cz/GetFile.ashx?ThumbnailID={0}","DisplayOrder":0,"Thumbnails":[{"TID":11282,"TSN":"detail","W":437,"H":438,"FS":33832,"FT":".jpg"},{"TID":11283,"TSN":"small-admin","W":135,"H":136,"FS":5485,"FT":".jpg"},{"TID":11284,"TSN":"medium","W":257,"H":257,"FS":14162,"FT":".jpg"},{"TID":11285,"TSN":"small","W":75,"H":75,"FS":2735,"FT":".jpg"}]}]},{"SpeakerID":228,"FirstName":"Radka","LastName":"Janeková","Company":"Red Hat","Title":null,"Suffix":null,"DisplayedTitles":null,"Photos":[{"PhotoID":2027,"DownloadThumbnailUrlPattern":"https://www.wug.cz/GetFile.ashx?ThumbnailID={0}","DisplayOrder":0,"Thumbnails":[{"TID":11108,"TSN":"detail","W":400,"H":400,"FS":41047,"FT":".jpg"},{"TID":11109,"TSN":"small-admin","W":136,"H":136,"FS":8005,"FT":".jpg"},{"TID":11110,"TSN":"medium","W":257,"H":257,"FS":21579,"FT":".jpg"},{"TID":11111,"TSN":"small","W":75,"H":75,"FS":3683,"FT":".jpg"}]}]},{"SpeakerID":234,"FirstName":"Viktor","LastName":"Hofer","Company":"Microsoft","Title":null,"Suffix":null,"DisplayedTitles":null,"Photos":[{"PhotoID":0,"DownloadThumbnailUrlPattern":"https://www.wug.cz/GetFile.ashx?ThumbnailID={0}","DisplayOrder":0,"Thumbnails":[{"TID":0,"TSN":null,"W":0,"H":0,"FS":0,"FT":null}]}]},{"SpeakerID":231,"FirstName":"Vitek","LastName":"Karas","Company":"Microsoft","Title":null,"Suffix":null,"DisplayedTitles":null,"Photos":[{"PhotoID":2029,"DownloadThumbnailUrlPattern":"https://www.wug.cz/GetFile.ashx?ThumbnailID={0}","DisplayOrder":0,"Thumbnails":[{"TID":11116,"TSN":"detail","W":400,"H":400,"FS":25423,"FT":".jpg"},{"TID":11117,"TSN":"small-admin","W":136,"H":136,"FS":6506,"FT":".jpg"},{"TID":11118,"TSN":"medium","W":257,"H":257,"FS":16659,"FT":".jpg"},{"TID":11119,"TSN":"small","W":75,"H":75,"FS":3228,"FT":".jpg"}]}]}],"Tags":[{"TagID":2,"Name":"vývojář","UrlName":"vyvojar","ForegroundColor":"#ffffff","BackgroundColor":"#d85c2d","TagCategories":null,"Priority":0},{"TagID":28,"Name":".NET","UrlName":"-NET","ForegroundColor":null,"BackgroundColor":null,"TagCategories":null,"Priority":0},{"TagID":64,"Name":".NET Core","UrlName":"-NET-Core","ForegroundColor":null,"BackgroundColor":null,"TagCategories":null,"Priority":0},{"TagID":36,"Name":"Linux","UrlName":"Linux","ForegroundColor":null,"BackgroundColor":null,"TagCategories":null,"Priority":0}],"Published":"2017-07-04T16:19:00","EventStatus":0},{"EventID":906,"Name":"Programujeme v ASP.NET Core 2.0","TakePlaceFrom":"2017-08-10T17:30:00","TakePlaceTo":"2017-08-10T21:00:00","EventType":0,"Branch":{"BranchID":1,"Name":"Praha","IsActive":true,"Country":{"CountryID":1,"Name":"Česká republika","CountryCode":"cz","CultureCode":"cs-CZ"}},"EventPlace":{"EventPlaceID":49,"BranchID":1,"Name":"BB centrum, budova Delta"},"Speakers":[{"SpeakerID":20,"FirstName":"Tomáš","LastName":"Jecha","Company":null,"Title":null,"Suffix":null,"DisplayedTitles":"MVP","Photos":[{"PhotoID":198,"DownloadThumbnailUrlPattern":"https://www.wug.cz/GetFile.ashx?ThumbnailID={0}","DisplayOrder":0,"Thumbnails":[{"TID":895,"TSN":"detail","W":78,"H":100,"FS":3957,"FT":".jpg"},{"TID":896,"TSN":"small-admin","W":78,"H":100,"FS":3957,"FT":".jpg"},{"TID":897,"TSN":"medium","W":78,"H":100,"FS":3957,"FT":".jpg"},{"TID":898,"TSN":"small","W":75,"H":96,"FS":3508,"FT":".jpg"}]}]}],"Tags":[{"TagID":2,"Name":"vývojář","UrlName":"vyvojar","ForegroundColor":"#ffffff","BackgroundColor":"#d85c2d","TagCategories":null,"Priority":0},{"TagID":64,"Name":".NET Core","UrlName":"-NET-Core","ForegroundColor":null,"BackgroundColor":null,"TagCategories":null,"Priority":0},{"TagID":63,"Name":"ASP.NET Core","UrlName":"ASP-NET-Core","ForegroundColor":null,"BackgroundColor":null,"TagCategories":null,"Priority":0},{"TagID":66,"Name":"ASP.NET MVC","UrlName":"ASP-NET-MVC","ForegroundColor":null,"BackgroundColor":null,"TagCategories":null,"Priority":0},{"TagID":11,"Name":"web","UrlName":"web","ForegroundColor":null,"BackgroundColor":null,"TagCategories":null,"Priority":0}],"Published":"2017-07-07T15:15:00","EventStatus":0},{"EventID":950,"Name":"SQL Server Bootcamp 2017","TakePlaceFrom":"2017-08-15T09:00:00","TakePlaceTo":"2017-08-16T18:00:00","EventType":3,"Branch":{"BranchID":2,"Name":"Brno","IsActive":true,"Country":{"CountryID":1,"Name":"Česká republika","CountryCode":"cz","CultureCode":"cs-CZ"}},"EventPlace":{"EventPlaceID":44,"BranchID":2,"Name":"Fakulta informatiky Masarykovy univerzity"},"Speakers":[{"SpeakerID":2,"FirstName":"David","LastName":"Gešvindr","Company":null,"Title":null,"Suffix":null,"DisplayedTitles":"MVP, MCT, MCSE","Photos":[{"PhotoID":237,"DownloadThumbnailUrlPattern":"https://www.wug.cz/GetFile.ashx?ThumbnailID={0}","DisplayOrder":0,"Thumbnails":[{"TID":1103,"TSN":"detail","W":525,"H":700,"FS":77688,"FT":".jpg"},{"TID":1104,"TSN":"small-admin","W":102,"H":136,"FS":5287,"FT":".jpg"},{"TID":1105,"TSN":"medium","W":257,"H":342,"FS":22520,"FT":".jpg"},{"TID":1106,"TSN":"small","W":75,"H":99,"FS":3449,"FT":".jpg"}]}]},{"SpeakerID":102,"FirstName":"Erik","LastName":"Caha","Company":"BI Experts, s.r.o.","Title":null,"Suffix":null,"DisplayedTitles":"MCT, MCITP, MCTS, MCPD","Photos":[{"PhotoID":1268,"DownloadThumbnailUrlPattern":"https://www.wug.cz/GetFile.ashx?ThumbnailID={0}","DisplayOrder":0,"Thumbnails":[{"TID":6853,"TSN":"detail","W":407,"H":407,"FS":40438,"FT":".jpg"},{"TID":6854,"TSN":"small-admin","W":136,"H":136,"FS":7138,"FT":".jpg"},{"TID":6855,"TSN":"medium","W":257,"H":257,"FS":18958,"FT":".jpg"},{"TID":6856,"TSN":"small","W":75,"H":75,"FS":3225,"FT":".jpg"}]}]},{"SpeakerID":94,"FirstName":"Jiří","LastName":"Neoral","Company":"Dixons Carphone CoE s.r.o.","Title":null,"Suffix":null,"DisplayedTitles":"MVP","Photos":[{"PhotoID":1855,"DownloadThumbnailUrlPattern":"https://www.wug.cz/GetFile.ashx?ThumbnailID={0}","DisplayOrder":0,"Thumbnails":[{"TID":10143,"TSN":"detail","W":700,"H":700,"FS":100321,"FT":".jpg"},{"TID":10144,"TSN":"small-admin","W":136,"H":136,"FS":5351,"FT":".jpg"},{"TID":10145,"TSN":"medium","W":257,"H":257,"FS":14065,"FT":".jpg"},{"TID":10146,"TSN":"small","W":75,"H":75,"FS":2775,"FT":".jpg"}]}]},{"SpeakerID":47,"FirstName":"Marek","LastName":"Chmel","Company":"AT&amp;T, Lead Database Administrator","Title":"Ing.","Suffix":"MSc","DisplayedTitles":"MVP, MCT, MCSE","Photos":[{"PhotoID":697,"DownloadThumbnailUrlPattern":"https://www.wug.cz/GetFile.ashx?ThumbnailID={0}","DisplayOrder":0,"Thumbnails":[{"TID":3402,"TSN":"detail","W":524,"H":700,"FS":78102,"FT":".jpg"},{"TID":3403,"TSN":"small-admin","W":101,"H":136,"FS":4812,"FT":".jpg"},{"TID":3404,"TSN":"medium","W":257,"H":342,"FS":21605,"FT":".jpg"},{"TID":3405,"TSN":"small","W":75,"H":100,"FS":3308,"FT":".jpg"}]}]},{"SpeakerID":95,"FirstName":"Michal","LastName":"Tinthofer","Company":null,"Title":null,"Suffix":null,"DisplayedTitles":"MCT, MCITP, MCTS","Photos":[{"PhotoID":1686,"DownloadThumbnailUrlPattern":"https://www.wug.cz/GetFile.ashx?ThumbnailID={0}","DisplayOrder":0,"Thumbnails":[{"TID":9209,"TSN":"detail","W":191,"H":191,"FS":8211,"FT":".jpg"},{"TID":9210,"TSN":"small-admin","W":136,"H":136,"FS":5757,"FT":".jpg"},{"TID":9211,"TSN":"medium","W":191,"H":191,"FS":8211,"FT":".jpg"},{"TID":9212,"TSN":"small","W":75,"H":75,"FS":2840,"FT":".jpg"}]}]},{"SpeakerID":148,"FirstName":"Miloslav","LastName":"Peterka","Company":"BI Experts, s.r.o.","Title":null,"Suffix":null,"DisplayedTitles":null,"Photos":[{"PhotoID":1275,"DownloadThumbnailUrlPattern":"https://www.wug.cz/GetFile.ashx?ThumbnailID={0}","DisplayOrder":0,"Thumbnails":[{"TID":6881,"TSN":"detail","W":493,"H":493,"FS":61366,"FT":".jpg"},{"TID":6882,"TSN":"small-admin","W":136,"H":136,"FS":8931,"FT":".jpg"},{"TID":6883,"TSN":"medium","W":257,"H":257,"FS":25257,"FT":".jpg"},{"TID":6884,"TSN":"small","W":75,"H":75,"FS":3714,"FT":".jpg"}]}]},{"SpeakerID":62,"FirstName":"Tomáš","LastName":"Herceg","Company":"RIGANTI s.r.o.","Title":null,"Suffix":null,"DisplayedTitles":"MVP","Photos":[{"PhotoID":1272,"DownloadThumbnailUrlPattern":"https://www.wug.cz/GetFile.ashx?ThumbnailID={0}","DisplayOrder":0,"Thumbnails":[{"TID":6869,"TSN":"detail","W":659,"H":659,"FS":133337,"FT":".jpg"},{"TID":6870,"TSN":"small-admin","W":136,"H":136,"FS":10788,"FT":".jpg"},{"TID":6871,"TSN":"medium","W":257,"H":257,"FS":32811,"FT":".jpg"},{"TID":6872,"TSN":"small","W":75,"H":75,"FS":4327,"FT":".jpg"}]}]},{"SpeakerID":199,"FirstName":"Vladimír","LastName":"Mužný","Company":null,"Title":null,"Suffix":null,"DisplayedTitles":"MCITP, MCSA, MCSE, MCT","Photos":[{"PhotoID":1682,"DownloadThumbnailUrlPattern":"https://www.wug.cz/GetFile.ashx?ThumbnailID={0}","DisplayOrder":0,"Thumbnails":[{"TID":9191,"TSN":"detail","W":150,"H":200,"FS":12059,"FT":".jpg"},{"TID":9192,"TSN":"small-admin","W":102,"H":136,"FS":6415,"FT":".jpg"},{"TID":9193,"TSN":"medium","W":150,"H":200,"FS":12059,"FT":".jpg"},{"TID":9194,"TSN":"small","W":75,"H":100,"FS":4373,"FT":".jpg"}]}]},{"SpeakerID":13,"FirstName":"Zdeněk","LastName":"Nosek","Company":"Thermo Fisher Scientific","Title":null,"Suffix":null,"DisplayedTitles":null,"Photos":[{"PhotoID":197,"DownloadThumbnailUrlPattern":"https://www.wug.cz/GetFile.ashx?ThumbnailID={0}","DisplayOrder":0,"Thumbnails":[{"TID":891,"TSN":"detail","W":80,"H":105,"FS":4145,"FT":".jpg"},{"TID":892,"TSN":"small-admin","W":80,"H":105,"FS":4145,"FT":".jpg"},{"TID":893,"TSN":"medium","W":80,"H":105,"FS":4145,"FT":".jpg"},{"TID":894,"TSN":"small","W":75,"H":98,"FS":3664,"FT":".jpg"}]}]}],"Tags":[{"TagID":1,"Name":"administrátor","UrlName":"administrator","ForegroundColor":"#ffffff","BackgroundColor":"#3063AA","TagCategories":null,"Priority":0},{"TagID":58,"Name":"BI specialista","UrlName":"BI-specialista","ForegroundColor":"#ffffff","BackgroundColor":"#f1bb00","TagCategories":null,"Priority":0},{"TagID":75,"Name":"datový analytik","UrlName":"datovy-analytik","ForegroundColor":"#ffffff","BackgroundColor":"#f1bb00","TagCategories":null,"Priority":0},{"TagID":2,"Name":"vývojář","UrlName":"vyvojar","ForegroundColor":"#ffffff","BackgroundColor":"#d85c2d","TagCategories":null,"Priority":0}],"Published":"2017-06-27T20:59:00","EventStatus":0},{"EventID":954,"Name":"Úvod do Redis a praktické návrhové vzory","TakePlaceFrom":"2017-08-31T17:30:00","TakePlaceTo":"2017-08-31T21:00:00","EventType":0,"Branch":{"BranchID":1,"Name":"Praha","IsActive":true,"Country":{"CountryID":1,"Name":"Česká republika","CountryCode":"cz","CultureCode":"cs-CZ"}},"EventPlace":{"EventPlaceID":49,"BranchID":1,"Name":"BB centrum, budova Delta"},"Speakers":[{"SpeakerID":195,"FirstName":"Miroslav","LastName":"Holec","Company":null,"Title":null,"Suffix":null,"DisplayedTitles":"MVP, MCSD, MCP, MSP","Photos":[{"PhotoID":1493,"DownloadThumbnailUrlPattern":"https://www.wug.cz/GetFile.ashx?ThumbnailID={0}","DisplayOrder":0,"Thumbnails":[{"TID":8097,"TSN":"detail","W":500,"H":500,"FS":46778,"FT":".jpg"},{"TID":8098,"TSN":"small-admin","W":136,"H":136,"FS":7660,"FT":".jpg"},{"TID":8099,"TSN":"medium","W":257,"H":257,"FS":18653,"FT":".jpg"},{"TID":8100,"TSN":"small","W":75,"H":75,"FS":3678,"FT":".jpg"}]}]}],"Tags":[{"TagID":2,"Name":"vývojář","UrlName":"vyvojar","ForegroundColor":"#ffffff","BackgroundColor":"#d85c2d","TagCategories":null,"Priority":0},{"TagID":34,"Name":"Microsoft Azure","UrlName":"Microsoft-Azure","ForegroundColor":null,"BackgroundColor":null,"TagCategories":null,"Priority":0},{"TagID":43,"Name":"návrhové vzory","UrlName":"navrhove-vzory","ForegroundColor":null,"BackgroundColor":null,"TagCategories":null,"Priority":0}],"Published":"2017-07-12T11:12:00","EventStatus":0},{"EventID":953,"Name":"Working effectively with legacy code (.NET)","TakePlaceFrom":"2017-09-20T17:30:00","TakePlaceTo":"2017-09-20T21:00:00","EventType":0,"Branch":{"BranchID":10,"Name":"Zlín","IsActive":true,"Country":{"CountryID":1,"Name":"Česká republika","CountryCode":"cz","CultureCode":"cs-CZ"}},"EventPlace":{"EventPlaceID":37,"BranchID":10,"Name":"Školící místnost společnosti Edhouse s.r.o."},"Speakers":[{"SpeakerID":105,"FirstName":"Robert","LastName":"Haken","Company":null,"Title":null,"Suffix":null,"DisplayedTitles":"MVP ASP.NET/IIS, MCT","Photos":[{"PhotoID":1271,"DownloadThumbnailUrlPattern":"https://www.wug.cz/GetFile.ashx?ThumbnailID={0}","DisplayOrder":0,"Thumbnails":[{"TID":6865,"TSN":"detail","W":500,"H":500,"FS":55467,"FT":".jpg"},{"TID":6866,"TSN":"small-admin","W":136,"H":136,"FS":7358,"FT":".jpg"},{"TID":6867,"TSN":"medium","W":257,"H":257,"FS":20139,"FT":".jpg"},{"TID":6868,"TSN":"small","W":75,"H":75,"FS":3474,"FT":".jpg"}]}]}],"Tags":[{"TagID":28,"Name":".NET","UrlName":"-NET","ForegroundColor":null,"BackgroundColor":null,"TagCategories":null,"Priority":0},{"TagID":27,"Name":"C#","UrlName":"CS","ForegroundColor":null,"BackgroundColor":null,"TagCategories":null,"Priority":0},{"TagID":32,"Name":"Visual Studio","UrlName":"Visual-Studio","ForegroundColor":null,"BackgroundColor":null,"TagCategories":null,"Priority":0},{"TagID":2,"Name":"vývojář","UrlName":"vyvojar","ForegroundColor":"#ffffff","BackgroundColor":"#d85c2d","TagCategories":null,"Priority":0}],"Published":"2017-07-11T08:21:00","EventStatus":0}]</value>
+  </data>
+</root>
