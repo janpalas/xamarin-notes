@@ -5,39 +5,39 @@
              Title="WUG Česká republika">
     <TabbedPage.Children>
         <ContentPage Title="Upcoming Events">
-            <!--<ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" IsHorizontalOptions="Center" VerticalOptions="Center" />-->
-            <ListView ItemsSource="{Binding UpcomingEvents}" HasUnevenRows="True" ItemTapped="ListView_OnItemTapped">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <ViewCell.View>
-                                <Grid>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="65"/>
-                                        <ColumnDefinition Width="*"/>
-                                    </Grid.ColumnDefinitions>
+            <Grid>
+                <ActivityIndicator IsRunning="{Binding IsBusy}"  VerticalOptions="Center" HorizontalOptions="Center"/>
+                <ListView ItemsSource="{Binding UpcomingEvents}" HasUnevenRows="True" ItemTapped="ListView_OnItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="65"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
 
-                                    <Frame Grid.Column="0">
-                                        <Label Text="{Binding TakePlaceFromDay}" Font="Bold, Large" HorizontalTextAlignment="Center"/>
-                                    </Frame>
-                                    <StackLayout Padding="0" Grid.Column="1">
-                                        <Label Text="{Binding Name}" Font="Bold, Medium"/>
-                                        <Label Text="{Binding BranchName}" />
-                                        <ActivityIndicator IsRunning="False"></ActivityIndicator>
-                                    </StackLayout>
-                                    
-                                </Grid>
-                                <!--<StackLayout Padding="0, 10, 0, 0"
+                                        <Frame Grid.Column="0">
+                                            <Label Text="{Binding TakePlaceFromDay}" Font="Bold, Large" HorizontalTextAlignment="Center"/>
+                                        </Frame>
+                                        <StackLayout Padding="0" Grid.Column="1">
+                                            <Label Text="{Binding Name}" Font="Bold, Medium"/>
+                                            <Label Text="{Binding BranchName}" />
+                                        </StackLayout>
+
+                                    </Grid>
+                                    <!--<StackLayout Padding="0, 10, 0, 0"
                                              Orientation="Horizontal"
-                                             Spacing="10">-->
-                                   
-                                <!--</StackLayout>-->
-                            </ViewCell.View>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                                             Spacing="10">
 
+                                    </StackLayout>-->
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
         </ContentPage>
 
         <ContentPage Title="Past Events">

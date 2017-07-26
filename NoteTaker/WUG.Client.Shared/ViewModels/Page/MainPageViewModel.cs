@@ -47,7 +47,6 @@ namespace WUG.Client.Shared.ViewModels.Page
         {
             IsBusy = true;
 
-            //await Task.Delay(5000);
             List<EventInfo> events = await _eventProvider.GetUpcomingEventsAsync();
 
             UpcomingEvents = new ObservableCollection<EventInfoViewModel>(events.Select(x => new EventInfoViewModel(x)));

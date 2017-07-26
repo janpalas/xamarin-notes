@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using WUG.Client.Forms.Droid.PlatformSpecific;
 using WUG.Client.Shared.PlatformAbstractions;
 
-[assembly: Xamarin.Forms.Dependency((typeof(HttpClient)))]
+[assembly: Xamarin.Forms.Dependency(typeof(HttpClient))]
 namespace WUG.Client.Forms.Droid.PlatformSpecific
 {
     
