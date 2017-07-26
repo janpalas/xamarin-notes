@@ -27,6 +27,11 @@ namespace WUG.Client.Droid
 
             await _viewModel.LoadDataAsync();
             ListAdapter = new EventInfosAdapter(this, _viewModel.UpcomingEvents);
+
+            var alertDialog = new AlertDialog.Builder(this);
+            alertDialog.SetTitle("AHOJ");
+            alertDialog.SetMessage("dn  nsnfnsjnsns s jnfj fs h hs hj");
+            alertDialog.Show();
         }
     }
 }

@@ -20,3 +20,8 @@
 /NoteTaker/packages
 /NoteTaker/WUG.Client.Shared.Tests/obj/Debug
 /NoteTaker/WUG.Client.Shared.Tests/bin/Debug
+/NoteTaker/WUG.Client.Forms/WUG.Client.Forms/bin/Debug
+/NoteTaker/WUG.Client.Forms/WUG.Client.Forms/obj/Debug
+/NoteTaker/WUG.Client.Forms/WUG.Client.Forms.Android/bin/Debug
+/NoteTaker/WUG.Client.Forms/WUG.Client.Forms.Android/obj
+/NoteTaker/WUG.Client.Forms/WUG.Client.Forms.iOS/obj/iPhone/Debug
