@@ -1,11 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:WUG.Client.Forms"
-             x:Class="WUG.Client.Forms.MainPage">
+             x:Class="WUG.Client.Forms.MainPage"
+             Title="WUG Česká republika">
+    <TabbedPage.Children>
+        <ContentPage Title="Upcoming Events">
+            <!--<ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" IsHorizontalOptions="Center" VerticalOptions="Center" />-->
+            <ListView ItemsSource="{Binding UpcomingEvents}" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <!--<Grid>
+                                    
+                                </Grid>-->
+                                <StackLayout Padding="0, 10, 0, 0"
+                                             Orientation="Horizontal"
+                                             Spacing="10">
+                                    <Frame>
+                                        <Label Text="{Binding TakePlaceFromDay}" Font="Bold, Large"/>
+                                    </Frame>
+                                    <StackLayout Padding="0">
+                                        <Label Text="{Binding Name}" Font="Bold, Medium"/>
+                                        <Label Text="{Binding BranchName}" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+        </ContentPage>
 
-</ContentPage>
+        <ContentPage Title="Past Events">
+            <!--<ListView ItemsSource="{Binding UpcomingEvents}">
+                
+            </ListView>-->
+            <Label Text="Hello!" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+        </ContentPage>
+
+        <ContentPage Title="Current Events">
+            <!--<ListView ItemsSource="{Binding UpcomingEvents}">
+                
+            </ListView>-->
+            <Label Text="Ahoj!" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+        </ContentPage>
+    </TabbedPage.Children>
+	
+
+</TabbedPage>

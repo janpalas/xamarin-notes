@@ -67,6 +67,16 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WUG.Client.Shared\WUG.Client.Shared.csproj">
+      <Project>{b59d0083-0602-4679-858a-33a956886202}</Project>
+      <Name>WUG.Client.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WUG.Core.Services.DataEntities\WUG.Core.Services.DataEntities.csproj">
+      <Project>{3040accf-bb63-455b-8999-3c87fd12691e}</Project>
+      <Name>WUG.Core.Services.DataEntities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -13,6 +13,7 @@ namespace WUG.Client.Shared.ViewModels.Page
         private readonly IEventProvider _eventProvider;
 
         private ObservableCollection<EventInfoViewModel> _upcomingEvents;
+        private bool _isBusy;
 
         public ObservableCollection<EventInfoViewModel> UpcomingEvents
         {
@@ -27,6 +28,16 @@ namespace WUG.Client.Shared.ViewModels.Page
             }
         }
 
+        public bool IsBusy
+        {
+            get => _isBusy;
+            set
+            {
+                _isBusy = value; 
+                NotifyPropertyChanged();
+            }
+        }
+
         public MainPageViewModel(IEventProvider eventProvider)
         {
             _eventProvider = eventProvider;
@@ -34,9 +45,14 @@ namespace WUG.Client.Shared.ViewModels.Page
 
         public async Task LoadDataAsync()
         {
+            IsBusy = true;
+
+            await Task.Delay(5000);
             List<EventInfo> events = await _eventProvider.GetUpcomingEventsAsync();
 
             UpcomingEvents = new ObservableCollection<EventInfoViewModel>(events.Select(x => new EventInfoViewModel(x)));
+
+            IsBusy = false;
         }
     }
 }

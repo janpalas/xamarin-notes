@@ -55,6 +55,7 @@
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.ObjectModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
@@ -97,6 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
+    <Compile Include="PlatformSpecific\HttpClient.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -120,6 +122,10 @@
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\WUG.Client.Shared\WUG.Client.Shared.csproj">
+      <Project>{b59d0083-0602-4679-858a-33a956886202}</Project>
+      <Name>WUG.Client.Shared</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WUG.Client.Forms\WUG.Client.Forms.csproj">
       <Project>{00016a6e-61a9-4117-9654-26168333e845}</Project>
       <Name>WUG.Client.Forms</Name>
