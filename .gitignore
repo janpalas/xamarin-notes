@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
@@ -36,3 +36,5 @@
 /NoteTaker/WUG.Core.Services.DataEntities/bin/Release
 /NoteTaker/NoteTaker.Shared/obj/Release
 /NoteTaker/WUG.Client.Droid/obj/Release
+NoteTaker/.vs/
+NoteTaker/WUG.Client.Forms/WUG.Client.Forms.iOS/obj/
